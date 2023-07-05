@@ -16,9 +16,9 @@ body {
   width: 100%;
   background-color: #1f2937;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  gap: 360px;
+  gap: 284px;
 }
 
 .header-logo {
@@ -96,7 +96,6 @@ img {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 48px;
   padding-top: 48px;
 }
 
@@ -105,6 +104,7 @@ img {
   font-size: 36px;
   color: #1f2937;
   align-self: center;
+  margin-bottom: 48px;
 }
 
 .photo-box {
@@ -116,7 +116,7 @@ img {
   gap: 48px;
 }
 
-.photo {
+.photos {
   border-radius: 6px;
   border-color: #3882f6;
   height: 128px;
@@ -138,6 +138,25 @@ img {
   height: 80px;
   width: 141px;
   text-align: center;
+}
+
+.quote-container {
+  order: 4;
+  background-color: #e5e7eb;
+  display: flex;
+  flex-flow: column;
+  padding-left: ;
+}
+
+.quote-paragraph {
+  text-align: left;
+  font-size: 36px;
+}
+
+.quote-author {
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 ul {

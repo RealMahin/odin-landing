@@ -1,3 +1,8 @@
+* {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
@@ -6,19 +11,61 @@ body {
   flex-flow: column;
 }
 
-* {
-  outline: 1px solid red;
-  outline-offset: -1px;
-}
+/* container order/size */
 
 .header {
   order: 1;
   width: 100%;
+  height: 30px;
+}
+
+.hero {
+  order: 2;
+  width: 100%;
+  height: 400px;
+}
+
+.photo-container {
+  order: 3;
+  width: 100%;
+  height: 375px;
+}
+
+.quote-container {
+  order: 4;
+  width: 100%;
+  height: 325px;
+}
+
+.white-container {
+  order: 5;
+  width: 100%;
+  height: 275px;
+}
+
+.footer {
+  order: 6;
+  width: 100%;
+  height: 50px;
+}
+
+/* margins */
+
+.header-link-box,
+.hero-image {
+  margin-right: 15%;
+}
+
+.header-logo,
+.hero-left {
+  margin-left: 15%;
+}
+
+.header {
   background-color: #1f2937;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 284px;
 }
 
 .header-logo {
@@ -39,32 +86,27 @@ body {
 }
 
 .hero {
-  order: 2;
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 400px;
   background-color: #1f2937;
-  gap: 56px;
 }
 
 .hero-left {
   display: flex;
   flex-flow: column;
-  flex: none;
+  flex: 0 1 auto;
   align-items: flex-start;
   gap: 8px;
   width: 450px;
   height: 225px;
 }
 
-.hero-main {
+.hero-title {
   font-size: 48px;
   color: #f9faf8;
   text-align: left;
-  word-wrap: break-word;
 }
 
 .hero-subtext {
@@ -80,7 +122,7 @@ body {
   align-items: center;
   height: 225px;
   width: 500px;
-  flex: 0 1 auto;
+  flex: 1 1 1;
 }
 
 img {
@@ -89,9 +131,6 @@ img {
 }
 
 .photo-container {
-  order: 3;
-  width: 100%;
-  height: auto;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -100,7 +139,6 @@ img {
 }
 
 .photo-header {
-  order: 1;
   font-size: 36px;
   color: #1f2937;
   align-self: center;
@@ -141,11 +179,10 @@ img {
 }
 
 .quote-container {
-  order: 4;
   background-color: #e5e7eb;
   display: flex;
   flex-flow: column;
-  padding-left: ;
+  justify-content: center;
 }
 
 .quote-paragraph {
@@ -157,6 +194,29 @@ img {
   align-self: flex-end;
   font-size: 16px;
   font-weight: bold;
+}
+
+.white-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-box {
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  color: #f9faf8;
 }
 
 ul {
